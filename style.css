@@ -36,7 +36,7 @@
 .nav-name {
     display: flex;
     flex-direction: row;
-    color: var(--secondaryColor);
+    color: var(--primaryColor);
     p{
         color: var(--colorWhite);
     }
@@ -51,7 +51,7 @@
     padding: 5px;
     transition: 0.6s ease;
     &:hover {
-        border: 2px solid var(--secondaryColor);
+        border: 2px solid var(--primaryColor);
     }
 }
 
@@ -64,7 +64,7 @@
     transition: 0.6s ease;
 
     &:hover {
-        background-color: var(--secondaryColor);
+        background-color: var(--primaryColor);
     }
 }
 
@@ -87,7 +87,7 @@
 
 .welcome {
     font-size: 100px;
-    color: var(--secondaryColor);
+    color: var(--primaryColor);
 }
 
 .my-name {
@@ -97,7 +97,7 @@
         font-size: 50px;
         transition: 0.6s ease;
         &:hover {
-            color: var(--secondaryColor);
+            color: var(--primaryColor);
         }
     }
 }
@@ -120,6 +120,7 @@
 
         &:hover {
             transform: translateX(50px);
+            
         }
     }
 }
@@ -168,5 +169,73 @@
     width: 190px;
     border-radius: 3px;
     margin: 7px 0 40px 0;
-    background: var(--secondaryColor);
+    background: var(--primaryColor);
+}
+
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor);
+    margin-top: 120px;
+    padding: 50px 300px;
+    color: var(--colorWhite);
+
+    > h1 {
+        font-size: 40px;
+        position: relative;
+        bottom: -10px;
+        z-index: 20;
+    }
+
+    .img-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+
+        .skill-img {
+            width: 600px;
+            height: 350px;
+            border-radius: 10px;
+            transition: 0.6s ease;
+
+            &:hover {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bgColor);
+    color: var(--colorWhite);
+
+    > h1 {
+        font-size: 40px;
+    }
+
+
+    .projects {
+        width: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body{
+        zoom: 55%;
+    }
+
 }
